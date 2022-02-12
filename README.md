@@ -7,11 +7,11 @@ this is a calculator that evaluates expressions using polish notation, so + 1 2 
 
 this calculator has primitive, operator-specific restrictions on how big operands can be. in english terms, this means that calculations that would be quite memory expensive are prevented from being executed unless the 'unsafe' variable is true.
 
-## how big can operands be in safe mode?
+## so how big can operands be in safe mode?
 
 the limit for how big operands can be varies from operator to operator. for example, the biggest operand that a factorial calculation can be is significantly smaller than the biggest operand for an addition calculation, due to the fact that factorial calculations are a lot more memory intensive. you can find the maximum operand size for any calculation in "main.py"; it should be located in a separate class which is dedicated to storing global variables.
 
-## how big can operands be in unsafe mode then?
+## what about in unsafe mode?
 
 the limit to how big operands can be in unsafe mode is however much memory windows has allowed python to hog.
 
