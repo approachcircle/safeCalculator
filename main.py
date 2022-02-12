@@ -79,10 +79,10 @@ def parse_and_execute(tokens: List[str]):
 
 
 print("------------------------------------------------------------------------------")
-print("use CTRL+C to exit")
-print("enter an expression to evaluate")
+print("use CTRL+C to exit.")
+print("enter an expression to evaluate.")
 print("refer to the various lookup tables if any symbols in this program confuse you.")
-print("the lookup tables can be found on the github repository")
+print("the lookup tables can be found on the github repository.")
 print("------------------------------------------------------------------------------")
 print()
 
