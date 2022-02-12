@@ -5,9 +5,9 @@ from typing import List
 
 class data:
     unsafe = False
-    MAX_INT = 99992147483647
-    MIN_INT = -99992147483647
-    MAX_FACTORIAL = 28000
+    MAX_INT = 2147483647
+    MIN_INT = -2147483647
+    MAX_FACTORIAL = 25000
 
 
 def check_safety(operator: str, operand: int):
