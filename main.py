@@ -89,15 +89,12 @@ def parse_and_execute(tokens: List[str]):
     return str(total) + " OK"
 
 
-print("-----------------------------------------------------------------------------------------------")
+print("------------------------------------------------------------------------------")
 print("use CTRL+C to exit")
 print("enter an expression to evaluate")
-print("expression syntax follows polish prefix notation (https://en.wikipedia.org/wiki/Polish_notation)")
-print("a tilde (~) symbol indicates that an error has occurred")
-print("a question mark indicates incorrect token(s)")
-print("\"OK\" indicates expression success")
-print("an omega (Ω) symbol indicates that an operand is too big to calculate with")
-print("------------------------------------------------------------------------------------------------")
+print("refer to the various lookup tables if any symbols in this program confuse you.")
+print("the lookup tables can be found on the github repository")
+print("------------------------------------------------------------------------------")
 print()
 
 while True:
