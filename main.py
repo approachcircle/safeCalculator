@@ -8,25 +8,14 @@ class data:
     MAX_INT = 99992147483647
     MIN_INT = -99992147483647
     MAX_FACTORIAL = 28000
-    safety_warning_shown = False
 
 
 def check_safety(operator: str, operand: int):
     if operator == "+" or operator == "-" or operator == "*":
-        if operand > data.MAX_INT and not data.unsafe or operand < data.MIN_INT  and not data.unsafe:
-            if not data.safety_warning_shown:
-                warn("an operand for this calculation was unsafe (too big/too small)")
-                inform("the program will now error instead of performing the calculation")
-                tip("toggle safety using \"#unsafe\"")
-                data.safety_warning_shown = True
+        if operand > data.MAX_INT and not data.unsafe or operand < data.MIN_INT and not data.unsafe:
             return "Ω"
     elif operator == "!":
         if operand > data.MAX_FACTORIAL and not data.unsafe:
-            if not data.safety_warning_shown:
-                warn("the operand for this factorial calculation was unsafe (too big/too small)")
-                inform("the program will now error instead of calculating this factorial")
-                tip("toggle safety using \"#unsafe\"")
-                data.safety_warning_shown = True
             return "Ω"
     return
 
